@@ -5,12 +5,8 @@ O tipo de jogo que mais agrada esse público inclui experiências como Celeste, 
 
 AstroCat satisfaz desejos como:
 
-Superar obstáculos com controle preciso;
-
-Explorar um mundo misterioso e visualmente bonito;
-
-Viver uma jornada emocional e imersiva;
-
-Controlar um personagem cativante e simpático;
-
-Sentir curiosidade e recompensa a cada descoberta.
+- Superar obstáculos com controle preciso;
+- Explorar um mundo misterioso e visualmente bonito;
+- Viver uma jornada emocional e imersiva;
+- Controlar um personagem cativante e simpático;
+- Sentir curiosidade e recompensa a cada descoberta.
