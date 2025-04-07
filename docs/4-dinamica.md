@@ -1,15 +1,38 @@
-### Dinâmica
+# Dinâmica
 
-- Quais os elementos de atenção e envolvimento na história?
-    - Atenção – Interesse imediato.
-    - Envolvimento – Interesse de longo prazo.
+## Elementos de atenção e envolvimento na história
 
-- Quais os tipos de decisões do seu jogador? 
-    - Ex: Discernível; Integrado; Ambíguo; Dois gumes; Novela
-    - Onde e como eles acontecem
+- **Atenção (Interesse imediato):**  
+  A introdução rápida com a queda da nave e o visual misterioso do planeta geram curiosidade imediata. O protagonista carismático também chama a atenção desde o início.
 
-- Guiando o Jogador:
-    - Quais os elementos de orientação direta?
-        - Onde e como eles acontecem
-    - Quais os elementos de orientação indireta?
-        - Onde e como eles acontecem
+- **Envolvimento (Interesse de longo prazo):**  
+  A progressão das habilidades, a descoberta de novas áreas e segredos, e o mistério por trás do planeta e seus habitantes mantêm o jogador envolvido. A presença de múltiplos finais possíveis também incentiva a exploração completa.
+
+## Tipos de decisões do jogador
+
+- **Tipo:** Integrado e ambíguo  
+  As decisões não são sempre claramente certas ou erradas, e muitas acontecem de forma integrada à exploração e interação com o mundo.
+
+- **Onde e como acontecem:**  
+  - Ajudar ou ignorar NPCs  
+  - Explorar áreas opcionais  
+  - Escolher caminhos diferentes durante a jornada  
+  Essas escolhas afetam sutilmente o desfecho ou elementos do mundo, sem interrupções diretas na jogabilidade.
+
+## Guiando o jogador
+
+### Elementos de orientação direta
+
+- **Onde e como acontecem:**  
+  - Dicas visuais como placas, sinais e setas em ruínas ou estruturas  
+  - NPCs que falam frases curtas com pistas  
+  - HUD minimalista que mostra objetivos atuais  
+  - Tutoriais breves no início de cada nova habilidade
+
+### Elementos de orientação indireta
+
+- **Onde e como acontecem:**  
+  - Design de cenário que convida a seguir caminhos naturais (uso de luz, contraste, movimento)  
+  - Sons que indicam áreas importantes ou segredos próximos  
+  - Mudança sutil na música ou na atmosfera em locais-chave  
+  - Itens visíveis em locais distantes que sugerem rotas ou habilidades futuras
