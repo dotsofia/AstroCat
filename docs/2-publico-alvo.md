@@ -1,4 +1,4 @@
-### Público Alvo
+# Público Alvo
 O público-alvo de AstroCat são jogadores que gostam de jogos indie de plataforma, com foco em exploração, atmosfera envolvente e desafios crescentes. Esse público costuma valorizar jogabilidade fluida, estética caprichada, e personagens carismáticos, mesmo em histórias simples.
 
 O tipo de jogo que mais agrada esse público inclui experiências como Celeste, Hollow Knight e Ori and the Blind Forest — jogos com boa ambientação, progressão de dificuldade e um certo apelo emocional ou artístico.
