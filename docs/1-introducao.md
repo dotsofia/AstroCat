@@ -1,4 +1,4 @@
-### Introdução
+# Introdução
 
 A ideia principal do jogo AstroCat é acompanhar a jornada de um gatinho astronauta que cai em um planeta alienígena misterioso e precisa explorar esse mundo estranho para recuperar peças da sua nave e conseguir voltar para casa.
 
