@@ -37,40 +37,19 @@
 
 ---
 
-## Inimigo Básico
+## Espinhos
 
 - **Descrição:**  
-  Criatura alienígena hostil que patrulha uma área.
-
+  Objeto que causa dano quando o jogador entra em contato.
+  
 - **Quando são utilizados:**  
   Em trechos onde se quer aumentar a dificuldade de movimentação.
 
 - **Componentes:**  
-  - Sprite Renderer (inimigo animado)  
-  - Rigidbody2D  
+  - Sprite Renderer
   - Collider2D  
-  - Audio Source (som de ataque, dano)  
   - Scripts:  
-    - **EnemyPatrol.cs** – movimento entre dois pontos definidos  
-    - **EnemyDamage.cs** – causa dano ao jogador ao tocar e reage ao ser derrotado
-
----
-
-## NPC Alienígena
-
-- **Descrição:**  
-  Personagem que interage com o jogador, oferecendo dicas ou itens.
-
-- **Quando são utilizados:**  
-  Em pontos estratégicos de progressão ou narrativa.
-
-- **Componentes:**  
-  - Sprite Renderer (alienígena com animações)  
-  - Collider2D (detecção de aproximação)  
-  - Audio Source (efeitos sonoros de fala)  
-  - Scripts:  
-    - **NPCDialogue.cs** – exibe diálogo ao interagir  
-    - **GiveItem.cs** – entrega itens ou ativa eventos se certas condições forem atendidas
+    - **Trap.cs** – causa dano ao jogador ao tocar
 
 ---
 
