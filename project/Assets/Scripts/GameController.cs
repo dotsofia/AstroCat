@@ -6,35 +6,43 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
-    int progressAmount;
-
     public GameObject player;
     public List<GameObject> levels;
     private int currentLevelIndex = 0;
 
+    private int currentProgress = 0;
+
+    public bool CanEnd { get; private set; } = false;
+
     public static event Action OnReset;
 
     Vector3 currentLevelPosition;
+    public DialogueTrigger dialogueTrigger;
 
     void Start()
     {
-        progressAmount = 0;
-        Gem.OnGemCollect += IncreaseProgressAmount;
         HoldToLoadLevel.OnHoldComplete += LoadNextLevel;
         Portal.OnPortalEntered += LoadLevel;
         PlayerHealth.OnPlayerDied += Restart;
+        Part.OnPartCollect += Progress;
+
+        dialogueTrigger.TriggerDialogue();
     }
 
+    void Progress()
+    {
+        currentProgress++;
+
+        if (currentProgress >= 3)
+        {
+            CanEnd = true;
+        }
+    }
     void Restart()
     {
         MusicManager.PlayBackgroundMusic(true);
         LoadLevel(currentLevelIndex, currentLevelPosition);
         OnReset.Invoke();
-    }
-
-    void IncreaseProgressAmount(int amount)
-    {
-        progressAmount += amount;
     }
 
     public void LoadLevel(int level, Vector3 position)
@@ -46,7 +54,6 @@ public class GameController : MonoBehaviour
         player.transform.position = position;
 
         currentLevelIndex = level;
-        progressAmount = 0;
     }
 
     void LoadNextLevel()

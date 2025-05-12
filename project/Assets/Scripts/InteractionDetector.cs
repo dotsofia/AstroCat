@@ -7,7 +7,7 @@ public class InteractionDetector : MonoBehaviour
 {
     private IInteractable interactableInRange = null;
     public GameObject interactionIcon;
-    public UIController ui;
+    public UIController UI;
 
     bool firstInteraction = true;
 
@@ -33,7 +33,7 @@ public class InteractionDetector : MonoBehaviour
 
             if (firstInteraction)
             {
-                ui.NextInstruction();
+                UI.NextInstruction();
                 firstInteraction = false;
             }
         }

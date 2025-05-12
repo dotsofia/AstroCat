@@ -28,12 +28,16 @@ public class PlayerMovement : MonoBehaviour
     public float dashCooldown = 0.1f;
     bool isDashing;
     bool canDash = true;
+
+    bool firstDash = true;
+    bool firstWallJump = true;
+    bool firstDoubleJump = true;
     TrailRenderer trailRenderer;
 
 
     [Header("Jumping")]
     public float jumpPower = 10f;
-    public int maxJumps = 2;
+    public int maxJumps = 1;
     int jumpsRemaining;
 
     [Header("GroundCheck")]
@@ -73,10 +77,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void UnlockSkill(int skill)
     {
-        if (skill == 0)
-        {
-            dashUnlocked = true;
-        }
         switch (skill)
         {
             case 0:
@@ -84,6 +84,9 @@ public class PlayerMovement : MonoBehaviour
                 break;
             case 1:
                 wallJumpUnlocked = true;
+                break;
+            case 2:
+                maxJumps = 2;
                 break;
 
             default:
@@ -125,6 +128,12 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && canDash && dashUnlocked)
         {
             StartCoroutine(DashCoroutine());
+
+            if (firstDash)
+            {
+                firstDash = false;
+                ui.NextInstruction();
+            }
         }
     }
 
@@ -209,9 +218,15 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetTrigger("jump");
                 smokeFX.Play();
             }
+
+            if (jumpsRemaining == 1 && context.performed && firstDoubleJump)
+            {
+                firstDoubleJump = false;
+                ui.NextInstruction();
+            }
         }
 
-        if (context.performed && wallJumpTimer > 0f)
+        if (context.performed && wallJumpTimer > 0f && wallJumpUnlocked)
         {
             isWallJumping = true;
             rb.velocity = new Vector2(wallJumpDirection * wallJumpPower.x, wallJumpPower.y);
@@ -228,6 +243,12 @@ public class PlayerMovement : MonoBehaviour
             }
             
             Invoke(nameof(CancelWallJump), wallJumpTime + 0.1f);
+
+            if (firstWallJump)
+            {
+                firstWallJump = false;
+                ui.NextInstruction();
+            }
         }
     }
 
