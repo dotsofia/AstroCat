@@ -13,9 +13,6 @@
 - **Antagonistas:**  
   Não há um vilão específico. O desafio vem do próprio planeta — obstáculos naturais e criaturas hostis.
 
-- **NPCs:**  
-  Poucos, mas únicos. Alienígenas amigáveis que ajudam com dicas ou peças da nave. Cada um tem visual e personalidade distintos.
-
 # História
 
 ## Premissa
@@ -24,7 +21,7 @@
   O jogo se passa em um planeta alienígena misterioso com florestas exóticas, ruínas e estruturas tecnológicas abandonadas.
 
 - **Antes do jogador assumir o controle:**  
-  Uma breve introdução mostra a queda da nave e o AstroCat acordando nos destroços.
+  Um breve monólogo de Astro situando o jogoador da situação atual.
 
 - **Como o jogo começa:**  
   O jogador assume o controle assim que o AstroCat desperta, podendo explorar os arredores.
@@ -43,14 +40,13 @@
 
 - O jogador pode simplesmente completar a missão e partir do planeta.
 - Dependendo das escolhas e descobertas feitas ao longo da jornada, outros desfechos podem ser revelados.
-- Finais alternativos podem explorar aspectos mais profundos da relação do AstroCat com o planeta e seus habitantes.
 
 # Sentidos
 
 ## Sentidos explorados no jogo
 
 - **Visuais:**  
-  Gráficos 2D com estilo artístico, cores vibrantes, animações expressivas e efeitos de luz.
+  Gráficos 2D com estilo artístico, poucas cores, animações expressivas e efeitos de luz.
 
 - **Sonoros:**  
   Trilha atmosférica, sons de ambiente, interações, perigo e descobertas.
